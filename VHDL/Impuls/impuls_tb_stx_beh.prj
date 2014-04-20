@@ -1,0 +1,4 @@
+vhdl isim_temp "SPI.vhd"
+vhdl isim_temp "impulsator.vhd"
+vhdl isim_temp "head.vhd"
+vhdl isim_temp "test_all.vhd"

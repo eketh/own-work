@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1 (64-bit)
+# Build 117799 by hdbuild on Thu Feb 17 11:42:17 PST 2011
+# Start of session at: Wed Nov 21 07:25:42 2012
+# Process ID: 6660
+# Log file: C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/pa.fromNetlist.tcl
+exit

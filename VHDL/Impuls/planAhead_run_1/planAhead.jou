@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1 (64-bit)
+# Build 117799 by hdbuild on Thu Feb 17 11:42:17 PST 2011
+# Start of session at: Wed Jan 30 14:08:18 2013
+# Process ID: 6808
+# Log file: C:/Users/Elsik/Desktop/DYPLOM/IMPULS/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Elsik/Desktop/DYPLOM/IMPULS/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/Elsik/Desktop/DYPLOM/IMPULS/pa.fromHdl.tcl
+exit

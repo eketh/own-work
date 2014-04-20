@@ -1,0 +1,520 @@
+Release 13.1 - ngc2edif O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design instrument.ngc ...
+WARNING:NetListWriters:298 - No output is written to instrument.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Madd_help2_add0000_Madd_lut<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus kanaldwa/Madd_Angle_mcl_cut_not0000<28 :
+   0> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Madd_Angle_mcl_cut_share0000_lut<29 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_Angle_mcl_cut_cmp_lt0000_lut<12 : 0> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_sine_out_cmp_le0000_lut<8 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_sine_out_cmp_le0001_lut<7 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_sine_out_cmp_lt0000_lut<16 : 1> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd10_cy<33 : 9> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd12_lut<23 : 4> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd2_cy<20 : 12> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd2_lut<13 : 10> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd3_cy<18 : 7> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd4_cy<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd4_lut<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd5_lut<30 : 3> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd1_lut<12 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd2_lut<16 : 2> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd3_lut<14 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd_lut<10 : 8> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_sine_angle<2>_x_sine_angle<8 : 4> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_sine_angle<3>_x_sine_angle<8 : 5> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_sine_angle<4>_x_sine_angle<8 : 6> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x5_half_mult0000_mclaurin_x2<16>_x_mclaurin_x<8 : 4>
+   on block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x_6_mult0000_Madd_cy<8 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Msub_Angle_mcl_cut_addsub0000_lut<28 : 16> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaldwa/mclaurin_x<8 : 0> on block
+   instrument is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaldwa/sine_out_mux0006<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus kanaljeden/Madd_Angle_mcl_cut_not0000<28
+   : 0> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Madd_Angle_mcl_cut_share0000_lut<29 : 0> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_Angle_mcl_cut_cmp_lt0000_lut<12 : 0> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_sine_out_cmp_le0000_lut<8 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_sine_out_cmp_le0001_lut<7 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_sine_out_cmp_lt0000_lut<16 : 1> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd10_cy<33 : 9> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd12_lut<23 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd2_cy<20 : 12> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd2_lut<13 : 10> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd3_cy<18 : 7> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd4_cy<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd4_lut<17 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd5_lut<30 : 3> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd1_lut<12 : 6> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd2_lut<16 : 2> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd3_lut<14 : 4> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd_lut<10 : 8> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_sine_angle<2>_x_sine_angle<8 : 4> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_sine_angle<3>_x_sine_angle<8 : 5> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_sine_angle<4>_x_sine_angle<8 : 6> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x5_half_mult0000_mclaurin_x2<16>_x_mclaurin_x<8 :
+   4> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x_6_mult0000_Madd_cy<8 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Msub_Angle_mcl_cut_addsub0000_lut<28 : 16> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaljeden/mclaurin_x<8 : 0> on block
+   instrument is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaljeden/sine_out_mux0006<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus kanaltrzy/Madd_Angle_mcl_cut_not0000<28
+   : 0> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Madd_Angle_mcl_cut_share0000_lut<29 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_Angle_mcl_cut_cmp_lt0000_lut<12 : 0> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_sine_out_cmp_le0000_lut<8 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_sine_out_cmp_le0001_lut<7 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_sine_out_cmp_lt0000_lut<16 : 1> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd10_cy<33 : 9> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd12_lut<23 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd2_cy<20 : 12> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd2_lut<13 : 10> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd3_cy<18 : 7> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd4_cy<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd4_lut<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd5_lut<30 : 3> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd1_lut<12 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd2_lut<16 : 2> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd3_lut<14 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd_lut<10 : 8> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_sine_angle<2>_x_sine_angle<8 : 4> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_sine_angle<3>_x_sine_angle<8 : 5> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_sine_angle<4>_x_sine_angle<8 : 6> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x5_half_mult0000_mclaurin_x2<16>_x_mclaurin_x<8 : 4>
+   on block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x_6_mult0000_Madd_cy<8 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Msub_Angle_mcl_cut_addsub0000_lut<28 : 16> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaltrzy/mclaurin_x<8 : 0> on block
+   instrument is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaltrzy/sine_out_mux0006<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus spi/Mcompar_time_cnt_cmp_lt0000_lut<11 :
+   1> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file instrument.edif ...
+ngc2edif: Total memory usage is 86564 kilobytes
+
+Release 13.1 - ngc2edif O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design instrument.ngc ...
+WARNING:NetListWriters:298 - No output is written to instrument.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Madd_help2_add0000_Madd_lut<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus kanaldwa/Madd_Angle_mcl_cut_not0000<28 :
+   0> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Madd_Angle_mcl_cut_share0000_lut<29 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_Angle_mcl_cut_cmp_lt0000_lut<12 : 0> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_sine_out_cmp_le0000_lut<8 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_sine_out_cmp_le0001_lut<7 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mcompar_sine_out_cmp_lt0000_lut<16 : 1> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd10_cy<33 : 9> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd12_lut<23 : 4> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd2_cy<20 : 12> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd2_lut<13 : 10> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd3_cy<18 : 7> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd4_cy<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd4_lut<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_PiAngle_mult0000_Madd5_lut<30 : 3> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd1_lut<12 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd2_lut<16 : 2> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd3_lut<14 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_Madd_lut<10 : 8> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_sine_angle<2>_x_sine_angle<8 : 4> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_sine_angle<3>_x_sine_angle<8 : 5> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x2_mult0000_sine_angle<4>_x_sine_angle<8 : 6> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x5_half_mult0000_mclaurin_x2<16>_x_mclaurin_x<8 : 4>
+   on block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Mmult_mclaurin_x_6_mult0000_Madd_cy<8 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaldwa/Msub_Angle_mcl_cut_addsub0000_lut<28 : 16> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaldwa/mclaurin_x<8 : 0> on block
+   instrument is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaldwa/sine_out_mux0006<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus kanaljeden/Madd_Angle_mcl_cut_not0000<28
+   : 0> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Madd_Angle_mcl_cut_share0000_lut<29 : 0> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_Angle_mcl_cut_cmp_lt0000_lut<12 : 0> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_sine_out_cmp_le0000_lut<8 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_sine_out_cmp_le0001_lut<7 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mcompar_sine_out_cmp_lt0000_lut<16 : 1> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd10_cy<33 : 9> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd12_lut<23 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd2_cy<20 : 12> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd2_lut<13 : 10> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd3_cy<18 : 7> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd4_cy<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd4_lut<17 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_PiAngle_mult0000_Madd5_lut<30 : 3> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd1_lut<12 : 6> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd2_lut<16 : 2> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd3_lut<14 : 4> on block instrument
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_Madd_lut<10 : 8> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_sine_angle<2>_x_sine_angle<8 : 4> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_sine_angle<3>_x_sine_angle<8 : 5> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x2_mult0000_sine_angle<4>_x_sine_angle<8 : 6> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x5_half_mult0000_mclaurin_x2<16>_x_mclaurin_x<8 :
+   4> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Mmult_mclaurin_x_6_mult0000_Madd_cy<8 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaljeden/Msub_Angle_mcl_cut_addsub0000_lut<28 : 16> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaljeden/mclaurin_x<8 : 0> on block
+   instrument is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaljeden/sine_out_mux0006<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus kanaltrzy/Madd_Angle_mcl_cut_not0000<28
+   : 0> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Madd_Angle_mcl_cut_share0000_lut<29 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_Angle_mcl_cut_cmp_lt0000_lut<12 : 0> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_sine_out_cmp_le0000_lut<8 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_sine_out_cmp_le0001_lut<7 : 0> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mcompar_sine_out_cmp_lt0000_lut<16 : 1> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd10_cy<33 : 9> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd12_lut<23 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd2_cy<20 : 12> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd2_lut<13 : 10> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd3_cy<18 : 7> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd4_cy<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd4_lut<17 : 6> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_PiAngle_mult0000_Madd5_lut<30 : 3> on block instrument is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd1_lut<12 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd2_lut<16 : 2> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd3_lut<14 : 4> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_Madd_lut<10 : 8> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_sine_angle<2>_x_sine_angle<8 : 4> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_sine_angle<3>_x_sine_angle<8 : 5> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x2_mult0000_sine_angle<4>_x_sine_angle<8 : 6> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x5_half_mult0000_mclaurin_x2<16>_x_mclaurin_x<8 : 4>
+   on block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Mmult_mclaurin_x_6_mult0000_Madd_cy<8 : 6> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   kanaltrzy/Msub_Angle_mcl_cut_addsub0000_lut<28 : 16> on block instrument is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaltrzy/mclaurin_x<8 : 0> on block
+   instrument is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus kanaltrzy/sine_out_mux0006<10 : 0> on
+   block instrument is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus spi/Mcompar_time_cnt_cmp_lt0000_lut<11 :
+   1> on block instrument is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file instrument.edif ...
+ngc2edif: Total memory usage is 86572 kilobytes
+

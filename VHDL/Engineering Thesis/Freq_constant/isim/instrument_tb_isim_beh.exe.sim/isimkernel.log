@@ -1,0 +1,35 @@
+Command line:
+   instrument_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50590
+
+Sat Dec 01 11:25:41 2012
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 501.486 Meg
+
+ Total Signals          : 208
+ Total Nets             : 2139
+ Total Signal Drivers   : 128
+ Total Blocks           : 16
+ Total Primitive Blocks : 14
+ Total Processes        : 51
+ Total Traceable Variables  : 37
+ Total Scalar Nets and Variables : 3551
+Total Line Count : 585
+
+** Failure:Assertion violation
+User(VHDL) Code Called Simulation Stop
+In process instru_tb.vhd:test 
+ 
+
+
+ Total Simulation Time: 0.842405 sec
+
+ Current Memory Usage: 501.486 Meg
+
+Sat Dec 01 11:25:47 2012
+

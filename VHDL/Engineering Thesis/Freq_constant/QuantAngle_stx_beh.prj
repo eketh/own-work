@@ -1,0 +1,3 @@
+vhdl isim_temp "sinus_stale.vhd"
+vhdl isim_temp "czestotliwosci.vhd"
+vhdl isim_temp "kanal.vhd"

@@ -1,0 +1,10 @@
+[Inputs]
+reset
+clk
+[Outputs]
+SPI_MOSI
+SPI_SCK
+SPI_CS
+d_CLR
+SPI_CLR
+[BiDir]

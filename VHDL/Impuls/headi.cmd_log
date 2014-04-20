@@ -1,0 +1,669 @@
+vhdtdtfi -lib work SPI.vhd -lib work impulsator.vhd -lib work head.vhd -prj IMPULS -o headi.spl -module headi -template C:/Xilinx/13.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e headi.spl C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.sym 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/headi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc headi.ucf -p xc3s500e-fg320-4 headi.ngc headi.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o headi_map.ncd headi.ngd headi.pcf 
+par -w -intstyle ise -ol high -t 1 headi_map.ncd headi.ncd headi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml headi.twx headi.ncd -o headi.twr headi.pcf -ucf headi.ucf 
+bitgen -intstyle ise -f headi.ut headi.ncd 

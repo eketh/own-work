@@ -1,0 +1,94 @@
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 
+xst -intstyle ise -ifn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.xst" -ofn "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc instrument.ucf -p xc3s500e-fg320-4 instrument.ngc instrument.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o instrument_map.ncd instrument.ngd instrument.pcf 
+par -w -intstyle ise -ol high -t 1 instrument_map.ncd instrument.ncd instrument.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml instrument.twx instrument.ncd -o instrument.twr instrument.pcf -ucf instrument.ucf 
+bitgen -intstyle ise -f instrument.ut instrument.ncd 

@@ -1,0 +1,1416 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: instrument.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "instrument.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "instrument"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : instrument
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sinus_stale.vhd" in Library work.
+Compiling vhdl file "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/czestotliwosci.vhd" in Library work.
+Compiling vhdl file "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sterowanie.vhd" in Library work.
+Architecture masz_a of Entity masz is up to date.
+Compiling vhdl file "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/kanal.vhd" in Library work.
+Architecture quantangle_a of Entity quantangle is up to date.
+Compiling vhdl file "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/spi.vhd" in Library work.
+Architecture daccom_a of Entity daccom is up to date.
+Compiling vhdl file "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/nadmod.vhd" in Library work.
+Entity <instrument> compiled.
+Entity <instrument> (Architecture <instrument_a>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <instrument> in library <work> (architecture <instrument_a>).
+
+Analyzing hierarchy for entity <masz> in library <work> (architecture <masz_a>).
+
+Analyzing hierarchy for entity <QuantAngle> in library <work> (architecture <quantangle_a>).
+
+Analyzing hierarchy for entity <DACcom> in library <work> (architecture <daccom_a>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <instrument> in library <work> (Architecture <instrument_a>).
+Entity <instrument> analyzed. Unit <instrument> generated.
+
+Analyzing Entity <masz> in library <work> (Architecture <masz_a>).
+Entity <masz> analyzed. Unit <masz> generated.
+
+Analyzing Entity <QuantAngle> in library <work> (Architecture <quantangle_a>).
+INFO:Xst:2679 - Register <Angle_mcl> in unit <QuantAngle> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+Entity <QuantAngle> analyzed. Unit <QuantAngle> generated.
+
+Analyzing Entity <DACcom> in library <work> (Architecture <daccom_a>).
+Entity <DACcom> analyzed. Unit <DACcom> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <masz>.
+    Related source file is "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sterowanie.vhd".
+WARNING:Xst:647 - Input <fch1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fch2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fch3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fch4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <test> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <prescaler> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <a>.
+    Found 8-bit register for signal <a_play>.
+    Found 8-bit register for signal <aa>.
+    Found 4-bit register for signal <busy>.
+    Found 8-bit comparator not equal for signal <next_state_0$cmp_ne0000> created at line 78.
+    Found 4-bit register for signal <out1>.
+    Found 4-bit register for signal <out2>.
+    Found 4-bit register for signal <out3>.
+    Found 4-bit register for signal <out4>.
+    Found 8-bit register for signal <play>.
+    Found 1-bit register for signal <state<0>>.
+    Summary:
+	inferred  53 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <masz> synthesized.
+
+
+Synthesizing Unit <QuantAngle>.
+    Related source file is "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/kanal.vhd".
+WARNING:Xst:1780 - Signal <prescaler> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <passing> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mclaurin_x5<51:48>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mclaurin_x5<38:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mclaurin_x3<33:32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mclaurin_x3<22:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <aa_tune_in> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <aa_Quarter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <a_tune_in> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <a_Quarter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Quarter> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PiAngle<63>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PiAngle<30:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Angle_mcl_cut<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Angle_mcl_cut<20:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Angle_mcl> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 11-bit register for signal <sine_out>.
+    Found 32-bit register for signal <Angle>.
+    Found 32-bit adder for signal <Angle$addsub0000> created at line 204.
+    Found 32-bit comparator greatequal for signal <Angle$cmp_ge0000> created at line 205.
+    Found 32-bit 4-to-1 multiplexer for signal <Angle$mux0002>.
+    Found 32-bit register for signal <Angle_mcl_cut>.
+    Found 32-bit subtractor for signal <Angle_mcl_cut$addsub0000> created at line 224.
+    Found 32-bit comparator less for signal <Angle_mcl_cut$cmp_lt0000> created at line 217.
+    Found 32-bit adder for signal <Angle_mcl_cut$share0000> created at line 217.
+    Found 9-bit register for signal <mclaurin_after_x>.
+    Found 9-bit register for signal <mclaurin_half>.
+    Found 9-bit subtractor for signal <mclaurin_half$sub0000> created at line 280.
+    Found 9-bit register for signal <mclaurin_output>.
+    Found 9-bit adder for signal <mclaurin_output$add0000> created at line 283.
+    Found 9-bit register for signal <mclaurin_x>.
+    Found 18-bit register for signal <mclaurin_x2>.
+    Found 9x9-bit multiplier for signal <mclaurin_x2$mult0000> created at line 271.
+    Found 34-bit register for signal <mclaurin_x3>.
+    Found 18x16-bit multiplier for signal <mclaurin_x3$mult0000> created at line 277.
+    Found 52-bit register for signal <mclaurin_x5>.
+    Found 34x18-bit multiplier for signal <mclaurin_x5$mult0000> created at line 281.
+    Found 34-bit register for signal <mclaurin_x5_half>.
+    Found 18x16-bit multiplier for signal <mclaurin_x5_half$mult0000> created at line 278.
+    Found 16-bit register for signal <mclaurin_x_120>.
+    Found 16-bit register for signal <mclaurin_x_6>.
+    Found 9x7-bit multiplier for signal <mclaurin_x_6$mult0000> created at line 272.
+    Found 64-bit register for signal <PiAngle>.
+    Found 32x32-bit multiplier for signal <PiAngle$mult0000> created at line 208.
+    Found 32-bit register for signal <PiAngle_cut>.
+    Found 9-bit register for signal <sine_angle>.
+    Found 32-bit comparator lessequal for signal <sine_out$cmp_le0000> created at line 214.
+    Found 32-bit comparator lessequal for signal <sine_out$cmp_le0001> created at line 225.
+    Found 32-bit comparator less for signal <sine_out$cmp_lt0000> created at line 221.
+    Found 11-bit adder carry in for signal <sine_out$share0000>.
+    Found 4-bit register for signal <tune_played>.
+    Found 32-bit register for signal <TunePeriod>.
+    Found 32-bit 4-to-1 multiplexer for signal <TunePeriod$mux0000>.
+    Summary:
+	inferred 422 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   6 Multiplier(s).
+	inferred   5 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <QuantAngle> synthesized.
+
+
+Synthesizing Unit <DACcom>.
+    Related source file is "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/spi.vhd".
+WARNING:Xst:1780 - Signal <strobe_edge> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <aa_strobe> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <a_strobe> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | rest                                           |
+    | Power Up State     | rest                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <SPI_SCK>.
+    Found 5-bit up counter for signal <bit_cnt>.
+    Found 36-bit comparator not equal for signal <bit_cnt$cmp_ne0000> created at line 145.
+    Found 32-bit register for signal <OutputPacket>.
+    Found 37-bit comparator less for signal <SPI_SCK$cmp_lt0000> created at line 160.
+    Found 36-bit comparator equal for signal <state$cmp_eq0001> created at line 105.
+    Found 36-bit comparator equal for signal <state$cmp_eq0002> created at line 109.
+    Found 36-bit up counter for signal <time_cnt>.
+    Found 37-bit comparator less for signal <time_cnt$cmp_lt0000> created at line 131.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+Unit <DACcom> synthesized.
+
+
+Synthesizing Unit <instrument>.
+    Related source file is "C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/nadmod.vhd".
+WARNING:Xst:1780 - Signal <sstrobe> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sd_strobe> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <help1<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 14-bit adder for signal <help1$addsub0000> created at line 123.
+    Found 14-bit adder for signal <help1$addsub0001> created at line 123.
+    Found 14-bit adder for signal <help1$addsub0002> created at line 123.
+    Found 14-bit subtractor for signal <help1$addsub0003> created at line 123.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+Unit <instrument> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 24
+ 18x16-bit multiplier                                  : 8
+ 32x32-bit multiplier                                  : 4
+ 34x18-bit multiplier                                  : 4
+ 9x7-bit multiplier                                    : 4
+ 9x9-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 28
+ 11-bit adder carry in                                 : 4
+ 14-bit adder                                          : 3
+ 14-bit subtractor                                     : 1
+ 32-bit adder                                          : 8
+ 32-bit subtractor                                     : 4
+ 9-bit adder                                           : 4
+ 9-bit subtractor                                      : 4
+# Counters                                             : 2
+ 36-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 94
+ 1-bit register                                        : 14
+ 11-bit register                                       : 4
+ 16-bit register                                       : 8
+ 18-bit register                                       : 4
+ 32-bit register                                       : 17
+ 34-bit register                                       : 8
+ 4-bit register                                        : 8
+ 52-bit register                                       : 4
+ 64-bit register                                       : 4
+ 8-bit register                                        : 3
+ 9-bit register                                        : 20
+# Comparators                                          : 26
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator less                                : 8
+ 32-bit comparator lessequal                           : 8
+ 36-bit comparator equal                               : 2
+ 36-bit comparator not equal                           : 1
+ 37-bit comparator less                                : 2
+ 8-bit comparator not equal                            : 1
+# Multiplexers                                         : 8
+ 32-bit 4-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <spi/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ rest  | 00
+ load  | 01
+ trans | 11
+ sent  | 10
+-------------------
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_0> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_0> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_1> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_1> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_2> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_2> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_3> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_3> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_4> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_4> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_5> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_5> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_61> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_6> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_7> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_7> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_8> in Unit <kanaljeden> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_8> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_120_9> in Unit <kanaljeden> is equivalent to the following 6 FFs/Latches, which will be removed : <mclaurin_x_120_10> <mclaurin_x_120_11> <mclaurin_x_120_12> <mclaurin_x_120_13> <mclaurin_x_120_14> <mclaurin_x_120_15> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_0> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_0> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_1> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_1> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_2> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_2> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_3> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_3> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_4> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_4> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_5> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_5> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_61> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_6> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_7> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_7> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_8> in Unit <kanaldwa> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_8> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_120_9> in Unit <kanaldwa> is equivalent to the following 6 FFs/Latches, which will be removed : <mclaurin_x_120_10> <mclaurin_x_120_11> <mclaurin_x_120_12> <mclaurin_x_120_13> <mclaurin_x_120_14> <mclaurin_x_120_15> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_0> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_0> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_1> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_1> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_2> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_2> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_3> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_3> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_4> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_4> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_5> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_5> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_61> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_6> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_7> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_7> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_8> in Unit <kanaltrzy> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_8> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_120_9> in Unit <kanaltrzy> is equivalent to the following 6 FFs/Latches, which will be removed : <mclaurin_x_120_10> <mclaurin_x_120_11> <mclaurin_x_120_12> <mclaurin_x_120_13> <mclaurin_x_120_14> <mclaurin_x_120_15> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_0> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_0> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_1> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_1> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_2> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_2> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_3> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_3> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_4> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_4> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_5> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_5> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_61> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_6> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_7> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_7> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_8> in Unit <kanalcztery> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_8> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_120_9> in Unit <kanalcztery> is equivalent to the following 6 FFs/Latches, which will be removed : <mclaurin_x_120_10> <mclaurin_x_120_11> <mclaurin_x_120_12> <mclaurin_x_120_13> <mclaurin_x_120_14> <mclaurin_x_120_15> 
+WARNING:Xst:1710 - FF/Latch <mclaurin_x_120_9> (without init value) has a constant value of 0 in block <kanaljeden>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mclaurin_x_120_9> (without init value) has a constant value of 0 in block <kanaldwa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mclaurin_x_120_9> (without init value) has a constant value of 0 in block <kanaltrzy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mclaurin_x_120_9> (without init value) has a constant value of 0 in block <kanalcztery>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_0> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_1> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_2> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_3> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_4> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_5> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_6> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_7> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_8> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_9> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_10> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_11> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_12> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_13> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_14> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_15> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_16> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_17> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_18> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_19> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_20> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_30> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_31> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_0> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_1> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_2> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_3> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_4> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_5> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_6> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_7> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_8> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_9> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_10> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_11> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_12> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_13> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_14> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_15> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_16> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_17> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_18> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_19> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_20> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_21> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_22> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_32> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x3_33> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_0> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_1> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_2> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_3> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_4> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_5> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_6> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_7> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_8> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_9> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_10> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_11> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_12> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_13> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_14> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_15> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_16> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_17> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_18> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_19> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_20> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_21> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_22> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_23> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_24> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_25> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_26> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_27> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_28> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_29> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_30> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <PiAngle_63> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_0> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_1> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_2> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_3> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_4> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_5> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_6> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_7> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_8> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_9> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_10> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_11> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_12> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_13> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_14> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_15> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_16> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_17> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_18> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_19> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_20> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_21> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_22> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_23> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_24> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_25> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_26> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_27> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_28> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_29> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_30> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_31> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_32> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_33> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_34> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_35> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_36> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_37> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_38> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_48> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_49> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_50> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <mclaurin_x5_51> of sequential type is unconnected in block <kanaljeden>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_0> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_1> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_2> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_3> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_4> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_5> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_6> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_7> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_8> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_9> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_10> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_11> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_12> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_13> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_14> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_15> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_16> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_17> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_18> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_19> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_20> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_30> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_31> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_0> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_1> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_2> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_3> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_4> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_5> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_6> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_7> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_8> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_9> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_10> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_11> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_12> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_13> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_14> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_15> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_16> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_17> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_18> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_19> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_20> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_21> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_22> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_32> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x3_33> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_0> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_1> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_2> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_3> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_4> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_5> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_6> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_7> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_8> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_9> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_10> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_11> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_12> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_13> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_14> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_15> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_16> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_17> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_18> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_19> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_20> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_21> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_22> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_23> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_24> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_25> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_26> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_27> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_28> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_29> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_30> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <PiAngle_63> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_0> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_1> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_2> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_3> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_4> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_5> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_6> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_7> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_8> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_9> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_10> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_11> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_12> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_13> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_14> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_15> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_16> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_17> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_18> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_19> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_20> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_21> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_22> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_23> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_24> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_25> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_26> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_27> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_28> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_29> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_30> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_31> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_32> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_33> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_34> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_35> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_36> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_37> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_38> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_48> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_49> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_50> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <mclaurin_x5_51> of sequential type is unconnected in block <kanaldwa>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_0> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_1> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_2> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_3> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_4> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_5> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_6> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_7> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_8> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_9> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_10> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_11> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_12> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_13> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_14> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_15> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_16> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_17> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_18> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_19> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_20> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_30> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_31> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_0> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_1> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_2> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_3> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_4> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_5> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_6> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_7> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_8> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_9> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_10> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_11> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_12> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_13> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_14> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_15> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_16> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_17> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_18> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_19> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_20> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_21> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_22> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_32> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x3_33> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_0> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_1> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_2> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_3> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_4> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_5> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_6> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_7> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_8> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_9> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_10> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_11> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_12> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_13> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_14> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_15> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_16> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_17> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_18> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_19> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_20> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_21> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_22> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_23> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_24> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_25> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_26> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_27> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_28> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_29> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_30> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <PiAngle_63> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_0> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_1> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_2> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_3> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_4> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_5> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_6> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_7> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_8> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_9> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_10> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_11> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_12> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_13> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_14> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_15> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_16> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_17> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_18> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_19> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_20> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_21> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_22> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_23> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_24> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_25> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_26> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_27> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_28> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_29> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_30> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_31> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_32> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_33> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_34> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_35> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_36> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_37> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_38> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_48> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_49> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_50> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <mclaurin_x5_51> of sequential type is unconnected in block <kanaltrzy>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_0> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_1> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_2> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_3> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_4> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_5> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_6> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_7> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_8> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_9> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_10> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_11> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_12> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_13> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_14> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_15> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_16> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_17> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_18> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_19> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_20> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_30> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_31> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_0> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_1> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_2> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_3> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_4> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_5> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_6> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_7> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_8> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_9> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_10> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_11> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_12> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_13> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_14> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_15> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_16> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_17> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_18> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_19> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_20> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_21> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_22> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_32> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x3_33> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_0> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_1> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_2> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_3> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_4> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_5> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_6> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_7> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_8> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_9> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_10> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_11> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_12> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_13> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_14> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_15> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_16> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_17> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_18> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_19> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_20> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_21> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_22> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_23> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_24> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_25> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_26> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_27> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_28> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_29> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_30> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <PiAngle_63> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_0> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_1> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_2> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_3> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_4> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_5> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_6> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_7> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_8> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_9> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_10> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_11> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_12> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_13> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_14> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_15> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_16> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_17> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_18> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_19> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_20> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_21> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_22> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_23> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_24> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_25> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_26> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_27> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_28> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_29> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_30> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_31> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_32> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_33> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_34> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_35> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_36> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_37> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_38> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_48> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_49> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_50> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2677 - Node <mclaurin_x5_51> of sequential type is unconnected in block <kanalcztery>.
+WARNING:Xst:2404 -  FFs/Latches <mclaurin_x_120<15:9>> (without init value) have a constant value of 0 in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_0> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_1> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_2> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_3> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_4> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_5> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_6> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_7> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_8> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_9> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_10> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_11> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_12> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_13> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_14> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_15> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_16> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_17> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_18> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_19> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_20> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_30> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <Angle_mcl_cut_31> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_0> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_1> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_2> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_3> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_4> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_5> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_6> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_7> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_8> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_9> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_10> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_11> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_12> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_13> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_14> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_15> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_16> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_17> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_18> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_19> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_20> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_21> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_22> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_32> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x3_33> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_0> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_1> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_2> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_3> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_4> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_5> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_6> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_7> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_8> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_9> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_10> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_11> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_12> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_13> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_14> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_15> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_16> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_17> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_18> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_19> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_20> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_21> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_22> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_23> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_24> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_25> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_26> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_27> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_28> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_29> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_30> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <PiAngle_63> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_0> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_1> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_2> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_3> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_4> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_5> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_6> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_7> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_8> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_9> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_10> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_11> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_12> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_13> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_14> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_15> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_16> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_17> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_18> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_19> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_20> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_21> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_22> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_23> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_24> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_25> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_26> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_27> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_28> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_29> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_30> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_31> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_32> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_33> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_34> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_35> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_36> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_37> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_38> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_48> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_49> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_50> of sequential type is unconnected in block <QuantAngle>.
+WARNING:Xst:2677 - Node <mclaurin_x5_51> of sequential type is unconnected in block <QuantAngle>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Multipliers                                          : 24
+ 18x10-bit multiplier                                  : 4
+ 18x16-bit multiplier                                  : 4
+ 32x32-bit multiplier                                  : 4
+ 34x18-bit multiplier                                  : 4
+ 9x7-bit multiplier                                    : 4
+ 9x9-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 28
+ 11-bit adder carry in                                 : 4
+ 14-bit adder                                          : 3
+ 14-bit subtractor                                     : 1
+ 32-bit adder                                          : 8
+ 32-bit subtractor                                     : 4
+ 9-bit adder                                           : 4
+ 9-bit subtractor                                      : 4
+# Counters                                             : 2
+ 36-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 1254
+ Flip-Flops                                            : 1254
+# Comparators                                          : 26
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator less                                : 8
+ 32-bit comparator lessequal                           : 8
+ 36-bit comparator equal                               : 2
+ 36-bit comparator not equal                           : 1
+ 37-bit comparator less                                : 2
+ 8-bit comparator not equal                            : 1
+# Multiplexers                                         : 8
+ 32-bit 4-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <mclaurin_x5_half_27> in Unit <QuantAngle> is equivalent to the following 6 FFs/Latches, which will be removed : <mclaurin_x5_half_28> <mclaurin_x5_half_29> <mclaurin_x5_half_30> <mclaurin_x5_half_31> <mclaurin_x5_half_32> <mclaurin_x5_half_33> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_0> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_0> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_1> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_1> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_2> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_2> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_3> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_3> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_4> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_4> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_5> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_5> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_61> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_6> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_7> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_7> 
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_8> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_120_8> 
+WARNING:Xst:1710 - FF/Latch <mclaurin_x_6_0> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mclaurin_x_6_14> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mclaurin_x_6_15> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <mclaurin_x_0> in Unit <QuantAngle> is equivalent to the following FF/Latch, which will be removed : <mclaurin_x_6_1> 
+
+Optimizing unit <instrument> ...
+
+Optimizing unit <masz> ...
+
+Optimizing unit <QuantAngle> ...
+WARNING:Xst:1710 - FF/Latch <TunePeriod_31> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_30> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_29> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_28> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_27> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_26> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_25> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_24> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_23> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_22> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_21> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_20> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_19> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_18> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_17> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_16> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TunePeriod_15> (without init value) has a constant value of 0 in block <QuantAngle>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <DACcom> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block instrument, actual ratio is 78.
+FlipFlop kanalcztery/Angle_11 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_16 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_18 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_20 has been replicated 2 time(s)
+FlipFlop kanalcztery/Angle_25 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_26 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_3 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_5 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_6 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_7 has been replicated 1 time(s)
+FlipFlop kanalcztery/Angle_8 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_11 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_16 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_18 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_20 has been replicated 2 time(s)
+FlipFlop kanaldwa/Angle_25 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_26 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_3 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_5 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_6 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_7 has been replicated 1 time(s)
+FlipFlop kanaldwa/Angle_8 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_11 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_16 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_18 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_20 has been replicated 2 time(s)
+FlipFlop kanaljeden/Angle_25 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_26 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_3 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_5 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_6 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_7 has been replicated 1 time(s)
+FlipFlop kanaljeden/Angle_8 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_11 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_16 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_18 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_20 has been replicated 2 time(s)
+FlipFlop kanaltrzy/Angle_25 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_26 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_3 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_5 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_6 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_7 has been replicated 1 time(s)
+FlipFlop kanaltrzy/Angle_8 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1201
+ Flip-Flops                                            : 1201
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : instrument.ngr
+Top Level Output File Name         : instrument
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 17434
+#      BUF                         : 2
+#      GND                         : 1
+#      INV                         : 124
+#      LUT1                        : 739
+#      LUT2                        : 3247
+#      LUT2_D                      : 24
+#      LUT2_L                      : 16
+#      LUT3                        : 565
+#      LUT3_D                      : 20
+#      LUT4                        : 1869
+#      LUT4_D                      : 68
+#      MULT_AND                    : 732
+#      MUXCY                       : 5294
+#      MUXF5                       : 65
+#      VCC                         : 1
+#      XORCY                       : 4667
+# FlipFlops/Latches                : 1201
+#      FDC                         : 404
+#      FDCE                        : 797
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 9
+#      OBUF                        : 20
+# MULTs                            : 20
+#      MULT18X18SIO                : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     3487  out of   4656    74%  
+ Number of Slice Flip Flops:           1201  out of   9312    12%  
+ Number of 4 input LUTs:               6672  out of   9312    71%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    232    12%  
+ Number of MULT18X18SIOs:                20  out of     20   100%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1201  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------------+-------+
+Control Signal                     | Buffer(FF name)              | Load  |
+-----------------------------------+------------------------------+-------+
+reset_IBUF_2(reset_IBUF_2:O)       | NONE(kanaldwa/PiAngle_31)    | 402   |
+reset_IBUF_1(reset_IBUF_1:O)       | NONE(kanaljeden/TunePeriod_7)| 400   |
+reset                              | IBUF                         | 399   |
+-----------------------------------+------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 17.495ns (Maximum Frequency: 57.159MHz)
+   Minimum input arrival time before clock: 1.973ns
+   Maximum output required time after clock: 12.610ns
+   Maximum combinational path delay: 9.102ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 17.495ns (frequency: 57.159MHz)
+  Total number of paths / destination ports: 2748700608 / 1990
+-------------------------------------------------------------------------
+Delay:               17.495ns (Levels of Logic = 39)
+  Source:            kanalcztery/Angle_7_1 (FF)
+  Destination:       kanalcztery/PiAngle_62 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: kanalcztery/Angle_7_1 to kanalcztery/PiAngle_62
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.591   1.136  kanalcztery/Angle_7_1 (kanalcztery/Angle_7_1)
+     LUT4_D:I0->LO         1   0.704   0.135  kanalcztery/Mmult_PiAngle_mult0000_Madd4_cy<6>11 (N1022)
+     LUT3:I2->O            1   0.704   0.455  kanalcztery/Mmult_PiAngle_mult0000_Madd4_cy<9>1_SW0 (N348)
+     LUT3_D:I2->O          8   0.704   0.792  kanalcztery/Mmult_PiAngle_mult0000_Madd4_cy<11>1 (kanalcztery/Mmult_PiAngle_mult0000_Madd4_cy<11>)
+     LUT3:I2->O            1   0.704   0.424  kanalcztery/Mmult_PiAngle_mult0000_Madd4_cy<17>11 (kanalcztery/Mmult_PiAngle_mult0000_Madd4_cy<17>)
+     LUT4:I3->O            1   0.704   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_lut<24> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_lut<24>)
+     MUXCY:S->O            1   0.464   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<24> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<25> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<26> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<27> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<28> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<29> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<29>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<30> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<30>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<31> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<31>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<32> (kanalcztery/Mmult_PiAngle_mult0000_Madd13_cy<32>)
+     XORCY:CI->O           1   0.804   0.595  kanalcztery/Mmult_PiAngle_mult0000_Madd13_xor<33> (kanalcztery/Mmult_PiAngle_mult0000_Madd_4410)
+     LUT1:I0->O            1   0.704   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd18_cy<35>_rt (kanalcztery/Mmult_PiAngle_mult0000_Madd18_cy<35>_rt)
+     MUXCY:S->O            1   0.464   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd18_cy<35> (kanalcztery/Mmult_PiAngle_mult0000_Madd18_cy<35>)
+     XORCY:CI->O           1   0.804   0.499  kanalcztery/Mmult_PiAngle_mult0000_Madd18_xor<36> (kanalcztery/Mmult_PiAngle_mult0000_Madd_4514)
+     LUT2:I1->O            1   0.704   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_lut<43> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_lut<43>)
+     MUXCY:S->O            1   0.464   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<43> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<43>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<44> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<44>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<45> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<45>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<46> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<46>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<47> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<47>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<48> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<48>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<49> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<49>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<50> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<50>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<51> (kanalcztery/Mmult_PiAngle_mult0000_Madd21_cy<51>)
+     XORCY:CI->O           1   0.804   0.499  kanalcztery/Mmult_PiAngle_mult0000_Madd21_xor<52> (kanalcztery/Mmult_PiAngle_mult0000_Madd_5411)
+     LUT2:I1->O            1   0.704   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_lut<54> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_lut<54>)
+     MUXCY:S->O            1   0.464   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<54> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<54>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<55> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<55>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<56> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<56>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<57> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<57>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<58> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<58>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<59> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<59>)
+     MUXCY:CI->O           1   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<60> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<60>)
+     MUXCY:CI->O           0   0.059   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<61> (kanalcztery/Mmult_PiAngle_mult0000_Madd22_cy<61>)
+     XORCY:CI->O           1   0.804   0.000  kanalcztery/Mmult_PiAngle_mult0000_Madd22_xor<62> (kanalcztery/PiAngle_mult0000<62>)
+     FDCE:D                    0.308          kanalcztery/PiAngle_62
+    ----------------------------------------
+    Total                     17.495ns (12.960ns logic, 4.535ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.973ns (Levels of Logic = 1)
+  Source:            ch<2> (PAD)
+  Destination:       keyboard/a_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ch<2> to keyboard/a_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  ch_2_IBUF (d_ch3_OBUF)
+     FDC:D                     0.308          keyboard/a_2
+    ----------------------------------------
+    Total                      1.973ns (1.526ns logic, 0.447ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9961 / 15
+-------------------------------------------------------------------------
+Offset:              12.610ns (Levels of Logic = 16)
+  Source:            kanaldwa/sine_out_1 (FF)
+  Destination:       test<9> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: kanaldwa/sine_out_1 to test<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  kanaldwa/sine_out_1 (kanaldwa/sine_out_1)
+     LUT3:I0->O            1   0.704   0.595  Madd_help1_addsub0001C1 (Madd_help1_addsub0001C)
+     LUT4:I0->O            1   0.704   0.000  Madd_help1_addsub0001_Madd_lut<2> (Madd_help1_addsub0001_Madd_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  Madd_help1_addsub0001_Madd_cy<2> (Madd_help1_addsub0001_Madd_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_help1_addsub0001_Madd_cy<3> (Madd_help1_addsub0001_Madd_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_help1_addsub0001_Madd_cy<4> (Madd_help1_addsub0001_Madd_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_help1_addsub0001_Madd_cy<5> (Madd_help1_addsub0001_Madd_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_help1_addsub0001_Madd_cy<6> (Madd_help1_addsub0001_Madd_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_help1_addsub0001_Madd_cy<7> (Madd_help1_addsub0001_Madd_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_help1_addsub0001_Madd_cy<8> (Madd_help1_addsub0001_Madd_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_help1_addsub0001_Madd_cy<9> (Madd_help1_addsub0001_Madd_cy<9>)
+     XORCY:CI->O           1   0.804   0.595  Madd_help1_addsub0001_Madd_xor<10> (help1_addsub0001<10>)
+     LUT2:I0->O            1   0.704   0.000  Madd_help1_addsub0002_lut<10> (Madd_help1_addsub0002_lut<10>)
+     MUXCY:S->O            1   0.464   0.000  Madd_help1_addsub0002_cy<10> (Madd_help1_addsub0002_cy<10>)
+     XORCY:CI->O           4   0.804   0.666  Madd_help1_addsub0002_xor<11> (Msub_help1_addsub0003_cy<11>)
+     LUT2:I1->O            1   0.704   0.420  help1<11>1 (test_9_OBUF)
+     OBUF:I->O                 3.272          test_9_OBUF (test<9>)
+    ----------------------------------------
+    Total                     12.610ns (9.628ns logic, 2.982ns route)
+                                       (76.4% logic, 23.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               9.102ns (Levels of Logic = 4)
+  Source:            reset (PAD)
+  Destination:       d_CLR (PAD)
+
+  Data Path: reset to d_CLR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           401   1.218   1.379  reset_IBUF (kanalcztery/reset_inv)
+     BUF:I->O            401   0.704   1.379  reset_IBUF_1 (reset_IBUF_1)
+     INV:I->O              2   0.704   0.447  sreset1_INV_0 (sreset)
+     OBUF:I->O                 3.272          d_CLR_OBUF (d_CLR)
+    ----------------------------------------
+    Total                      9.102ns (5.898ns logic, 3.204ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 103.00 secs
+Total CPU time to Xst completion: 103.38 secs
+ 
+--> 
+
+Total memory usage is 353032 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  669 (   0 filtered)
+Number of infos    :   53 (   0 filtered)
+

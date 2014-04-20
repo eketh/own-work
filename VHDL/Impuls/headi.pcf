@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map O.40d on Sun Feb 10 00:44:52 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SPI_CLR" LOCATE = SITE "P8" LEVEL 1;
+COMP "SPI_SCK" LOCATE = SITE "U16" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "SPI_MOSI" LOCATE = SITE "T4" LEVEL 1;
+COMP "RS_e" LOCATE = SITE "R7" LEVEL 1;
+COMP "RS_o" LOCATE = SITE "M14" LEVEL 1;
+COMP "RS_s" LOCATE = SITE "C5" LEVEL 1;
+COMP "bajerak<0>" LOCATE = SITE "E12" LEVEL 1;
+COMP "bajerak<1>" LOCATE = SITE "E11" LEVEL 1;
+COMP "bajerak<2>" LOCATE = SITE "F11" LEVEL 1;
+COMP "bajerak<3>" LOCATE = SITE "C11" LEVEL 1;
+COMP "anew" LOCATE = SITE "K17" LEVEL 1;
+COMP "d_pulse" LOCATE = SITE "D11" LEVEL 1;
+COMP "reset" LOCATE = SITE "N17" LEVEL 1;
+COMP "SPI_CS" LOCATE = SITE "N8" LEVEL 1;
+COMP "read_h" LOCATE = SITE "F7" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

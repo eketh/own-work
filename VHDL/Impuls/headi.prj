@@ -1,0 +1,4 @@
+vhdl work "SPI.vhd"
+vhdl work "RS.vhd"
+vhdl work "impulsator.vhd"
+vhdl work "head.vhd"

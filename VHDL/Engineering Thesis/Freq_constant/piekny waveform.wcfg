@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/instrument_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="freqlib" />
+            <top_module name="instrument_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="sinelib" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/instrument_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/sch" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sch[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sch[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/keyboard/out1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/keyboard/out2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/keyboard/out3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/kanaljeden/tune_played" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tune_played[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tune_played[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/kanaldwa/tune_played" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tune_played[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tune_played[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/kanaltrzy/tune_played" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tune_played[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tune_played[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/keyboard/busy" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">busy[2:0]</obj_property>
+      <obj_property name="ObjectShortName">busy[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/keyboard/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instrument_tb/wiesio/keyboard/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+</wave_config>

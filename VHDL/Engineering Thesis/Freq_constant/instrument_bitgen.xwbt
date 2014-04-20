@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Elsik\Desktop\DYPLOM\Freq_constant\instrument.ncd
+OUTFILE=C:\Users\Elsik\Desktop\DYPLOM\Freq_constant\instrument.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Elsik\Desktop\DYPLOM\Freq_constant
+LICENSE=WebPack
+USER_INFO=206763111_0_0_173

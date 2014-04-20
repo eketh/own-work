@@ -1,0 +1,7 @@
+vhdl work "sinus_stale.vhd"
+vhdl work "czestotliwosci.vhd"
+vhdl work "sterowanie.vhd"
+vhdl work "spi.vhd"
+vhdl work "kanal.vhd"
+vhdl work "nadmod.vhd"
+vhdl work "instru_tb.vhd"

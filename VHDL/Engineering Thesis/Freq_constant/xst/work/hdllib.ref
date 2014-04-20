@@ -1,0 +1,10 @@
+AR daccom daccom_a C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/spi.vhd sub00/vhpl07 1354030942
+AR instrument instrument_a C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/nadmod.vhd sub00/vhpl09 1354030944
+PH freqlib NULL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/czestotliwosci.vhd sub00/vhpl03 1354030936
+EN instrument NULL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/nadmod.vhd sub00/vhpl08 1354030943
+PH sinelib NULL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sinus_stale.vhd sub00/vhpl02 1354030935
+AR quantangle quantangle_a C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/kanal.vhd sub00/vhpl05 1354030940
+EN daccom NULL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/spi.vhd sub00/vhpl06 1354030941
+AR masz masz_a C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sterowanie.vhd sub00/vhpl01 1354030938
+EN masz NULL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sterowanie.vhd sub00/vhpl00 1354030937
+EN quantangle NULL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/kanal.vhd sub00/vhpl04 1354030939

@@ -1,0 +1,22 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Elsik/Desktop/DYPLOM/IMPULS/obliczaczf_isim_beh.exe -prj C:/Users/Elsik/Desktop/DYPLOM/IMPULS/obliczaczf_beh.prj work.obliczaczf 
+ISim O.40d (signature 0xc4ca3437)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/obliczaczf.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/obliczaczf.vhd" Line 57: <komenda> remains a black-box since it has no binding entity.
+Completed static elaboration
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package std_logic_textio from library ieee
+WARNING:Simulator:648 - "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/obliczaczf.vhd" Line 57. Instance komenda is unbound
+Compiling architecture behavior of entity obliczaczf
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable C:/Users/Elsik/Desktop/DYPLOM/IMPULS/obliczaczf_isim_beh.exe
+Fuse Memory Usage: 21204 KB
+Fuse CPU Usage: 280 ms

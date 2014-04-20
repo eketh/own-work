@@ -1,0 +1,6 @@
+vhdl isim_temp "sinus_stale.vhd"
+vhdl isim_temp "czestotliwosci.vhd"
+vhdl isim_temp "sterowanie.vhd"
+vhdl isim_temp "spi.vhd"
+vhdl isim_temp "kanal.vhd"
+vhdl isim_temp "nadmod.vhd"

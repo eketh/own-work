@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map O.40d on Tue Nov 27 16:44:34 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SPI_CLR" LOCATE = SITE "P8" LEVEL 1;
+COMP "SPI_SCK" LOCATE = SITE "U16" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "SPI_MOSI" LOCATE = SITE "T4" LEVEL 1;
+COMP "ch<0>" LOCATE = SITE "N17" LEVEL 1;
+COMP "ch<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "ch<2>" LOCATE = SITE "L14" LEVEL 1;
+COMP "ch<3>" LOCATE = SITE "L13" LEVEL 1;
+COMP "ch<4>" LOCATE = SITE "A4" LEVEL 1;
+COMP "ch<5>" LOCATE = SITE "B4" LEVEL 1;
+COMP "ch<6>" LOCATE = SITE "B6" LEVEL 1;
+COMP "ch<7>" LOCATE = SITE "D5" LEVEL 1;
+COMP "d_CLR" LOCATE = SITE "F12" LEVEL 1;
+COMP "d_ch1" LOCATE = SITE "C11" LEVEL 1;
+COMP "d_ch2" LOCATE = SITE "D11" LEVEL 1;
+COMP "reset" LOCATE = SITE "K17" LEVEL 1;
+COMP "SPI_CS" LOCATE = SITE "N8" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

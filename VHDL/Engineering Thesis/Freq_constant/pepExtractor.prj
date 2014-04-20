@@ -1,0 +1,6 @@
+work	"czestotliwosci.vhd"
+work	"kanal.vhd"
+work	"nadmod.vhd"
+work	"sinus_stale.vhd"
+work	"spi.vhd"
+work	"sterowanie.vhd"

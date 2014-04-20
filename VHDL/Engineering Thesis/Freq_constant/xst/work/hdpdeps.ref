@@ -1,0 +1,38 @@
+V3 19
+FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/czestotliwosci.vhd 2012/11/27.16:31:35 O.40d
+PH work/freqlib 1354030936 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/czestotliwosci.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/STD_LOGIC_UNSIGNED 1296775760
+FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/kanal.vhd 2012/11/21.12:49:44 O.40d
+EN work/QuantAngle 1354030939 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/kanal.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/STD_LOGIC_UNSIGNED 1296775760 \
+      PB ieee/std_logic_arith 1296775759 PB ieee/NUMERIC_STD 1296775759 \
+      PH work/sinelib 1354030935 PH work/freqlib 1354030936
+AR work/QuantAngle/QuantAngle_a 1354030940 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/kanal.vhd EN work/QuantAngle 1354030939
+FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/nadmod.vhd 2012/11/27.16:35:30 O.40d
+EN work/instrument 1354030943 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/nadmod.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/STD_LOGIC_UNSIGNED 1296775760 \
+      PB ieee/std_logic_arith 1296775759 PB ieee/NUMERIC_STD 1296775759 \
+      PH work/sinelib 1354030935 PH work/freqlib 1354030936
+AR work/instrument/instrument_a 1354030944 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/nadmod.vhd \
+      EN work/instrument 1354030943 CP masz CP QuantAngle CP DACcom
+FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sinus_stale.vhd 2012/11/21.00:25:12 O.40d
+PH work/sinelib 1354030935 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sinus_stale.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/STD_LOGIC_UNSIGNED 1296775760
+FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/spi.vhd 2012/11/21.00:15:50 O.40d
+EN work/DACcom 1354030941 FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/spi.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/STD_LOGIC_UNSIGNED 1296775760
+AR work/daccom/DACcom_a 1354030942 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/spi.vhd EN work/DACcom 1354030941
+FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sterowanie.vhd 2012/11/21.11:56:55 O.40d
+EN work/masz 1354030937 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sterowanie.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/STD_LOGIC_UNSIGNED 1296775760 \
+      PB ieee/std_logic_arith 1296775759 PB ieee/NUMERIC_STD 1296775759
+AR work/masz/masz_a 1354030938 \
+      FL C:/Users/Elsik/Desktop/DYPLOM/Freq_constant/sterowanie.vhd EN work/masz 1354030937

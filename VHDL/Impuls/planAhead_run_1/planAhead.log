@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1 (64-bit)
+# Build 117799 by hdbuild on Thu Feb 17 11:42:17 PST 2011
+# Start of session at: Wed Jan 30 14:08:18 2013
+# Process ID: 6808
+# Log file: C:/Users/Elsik/Desktop/DYPLOM/IMPULS/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Elsik/Desktop/DYPLOM/IMPULS/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-Licensing 3] Your PlanAhead license expires in -244 day(s)
+INFO: [HD-ArchReader 0] Loading parts and site information from C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+start_gui -source C:/Users/Elsik/Desktop/DYPLOM/IMPULS/pa.fromHdl.tcl
+# create_project -name IMPULS -dir "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/planAhead_run_1" -part xc3s500efg320-4
+Parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Time (s): 5.126w
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top headi $srcset
+# set_param project.paUcfFile  "headi.ucf"
+# set hdlfile [add_files [list {SPI.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {impulsator.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {head.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# add_files "headi.ucf" -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+INFO: [PlanAhead-58] Using the Verific elaboration engine
+Parsing VHDL file "C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing package <attributes>.
+Parsing VHDL file "C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing package <attributes>.
+Parsing VHDL file "C:\Users\Elsik\Desktop\DYPLOM\IMPULS\SPI.vhd" into library work
+Parsing entity <DACcom>.
+Parsing architecture <DACcom_a> of entity <daccom>.
+Parsing VHDL file "C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd" into library work
+Parsing entity <impuls>.
+ERROR: [HDL-806] Syntax error near ")". [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:11]
+ERROR: [HDL-69] <states> is not declared. [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:17]
+ERROR: [HDL-806] Syntax error near "begin". [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:30]
+ERROR: [HDL-32] <time_cnt> is already declared in this region. [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:32]
+ERROR: [HDL-806] Syntax error near ")". [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:32]
+ERROR: [HDL-32] <clk_i> is already declared in this region. [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:49]
+ERROR: [HDL-32] <clk_i> is already declared in this region. [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:58]
+ERROR: [HDL-32] <reset_i> is already declared in this region. [C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd:88]
+INFO: [HDL-1103] VHDL file C:\Users\Elsik\Desktop\DYPLOM\IMPULS\impulsator.vhd ignored due to errors
+Parsing VHDL file "C:\Users\Elsik\Desktop\DYPLOM\IMPULS\head.vhd" into library work
+Parsing entity <headi>.
+Parsing architecture <headi_a> of entity <headi>.
+Removing all analyzed parse trees
+Time (s): 10.852w
+ERROR: [Designutils-72] Failed to analyze HDL design
+    while executing
+"open_rtl_design -part xc3s500efg320-4"
+    (file "C:/Users/Elsik/Desktop/DYPLOM/IMPULS/pa.fromHdl.tcl" line 19)
+exit
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

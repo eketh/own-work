@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="12">
+	<FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+		<Filter Type="Srcs"/>
+		<File Path="$PPRDIR/../SPI.vhd">
+		</File>
+		<File Path="$PPRDIR/../impulsator.vhd">
+		</File>
+		<File Path="$PPRDIR/../head.vhd">
+		</File>
+		<Config>
+			<Option Name="DesignMode" Val="RTL"/>
+			<Option Name="TopModule" Val="headi"/>
+		</Config>
+	</FileSet>
+</DARoots>
+
