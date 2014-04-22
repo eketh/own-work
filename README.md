@@ -6,7 +6,9 @@ Various memorable projects I did during studies. Including:
 Erlang
 ======
 
-Simple Mastermind server and Riemann integral calculator.
+Simple Mastermind server, pi number calculator and Riemann integral calculator.
+
+TODO do something that is not numerical :P
 
 Statistics
 ==========
